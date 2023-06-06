@@ -41,3 +41,9 @@ alter task WAIT_TASK RESUME;
 alter task LOAD_TASK RESUME;
 
 select * from table(information_schema.task_dependents(task_name => 'LOAD_TASK', recursive => true));
+
+
+alter task LOAD_TASK SUSPEND;
+alter task REFINE_TASK2 SUSPEND;
+alter task PROCESS_FILES_TASK2 SUSPEND;
+alter task WAIT_TASK SUSPEND;
