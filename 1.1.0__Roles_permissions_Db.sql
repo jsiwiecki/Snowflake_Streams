@@ -12,7 +12,7 @@ grant IMPORTED PRIVILEGES on DATABASE SNOWFLAKE to role VHOL;
 create or replace warehouse VHOL_WH WAREHOUSE_SIZE = XSMALL, AUTO_SUSPEND = 5, AUTO_RESUME= TRUE;
 grant all privileges on warehouse VHOL_WH to role VHOL;
 
-// Create Database 
+// Create Database
 use role VHOL;
 create or replace database VHOL_ST;
 grant all privileges on database VHOL_ST to role VHOL;

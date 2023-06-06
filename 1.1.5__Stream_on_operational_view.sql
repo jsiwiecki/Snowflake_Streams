@@ -1,0 +1,3 @@
+create or replace stream CC_TRANS_STAGING_VIEW_STREAM on view CC_TRANS_STAGING_VIEW SHOW_INITIAL_ROWS=true;
+select count(*) from CC_TRANS_STAGING_VIEW_STREAM;
+select * from CC_TRANS_STAGING_VIEW_STREAM limit 10;
